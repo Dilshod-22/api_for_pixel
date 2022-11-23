@@ -19,7 +19,9 @@ app.use(express.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.set("views engine","ejs")
 
-
+app.use("/",(req,res)=>{
+    res.send("this api for pixel wallpaper")
+})
 app.use("/auth",authRouter)
 app.use("/post",postRouter)
 app.use("/action",actionRouter)
