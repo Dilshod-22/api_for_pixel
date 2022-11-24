@@ -3,7 +3,7 @@ const People = require("../models/user")
 const {inspection,inspectionLogin} = require("./function/auth")
 
 router.get("/allUser",async(req,res)=>{
-    const users = await People.FindOne()
+    const users = await People.find()
     res.json(users).status(200).end
 })
 
