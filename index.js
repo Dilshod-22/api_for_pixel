@@ -7,7 +7,7 @@ const actionRouter = require("./routers/action")
 const mongoose = require("mongoose")
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/chatmongodb+srv://moxirbek:dilshodbek0422@cluster0.fp1t4.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://moxirbek:dilshodbek0422@cluster0.fp1t4.mongodb.net/?retryWrites=true&w=majority")
 .then(()=>{
     console.log("connect to mongoose");
 })
